@@ -11,7 +11,7 @@ function connectDB(){
 
   /* HOST */
 
-  $host="mysql.smartfreehosting.net"; //servidor BBDD
+  $host="mysql.hostytec.es"; //servidor BBDD
   $user="u979048689_adm"; //nom usuari
   $pass="help42"; //contrasenya
   $BD="u979048689_help"; //nom de la BBDD

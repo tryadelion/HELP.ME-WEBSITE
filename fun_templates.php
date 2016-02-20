@@ -161,146 +161,23 @@ function blueCards($titol, $text, $list,$add){
         </div>
 <?php
 }
-/***************
-  Cards OLD
-***************/
-
-function redCards($titol, $text, $enllac,$enllacText){
+//titol, nom cognoms, data incidència , desc,
+function caseFile($titol, $data, $noms, $desc, $x, $y){
 ?>
-        <div class="col s3">
-          <div class="card materialize-red darken-2 hoverable">
-            <div class="card-content white-text">
-              <span class="card-title"><?=$titol?></span>
-              <p><?=$text?></p>
-            </div>
-            <div class="card-action" style="text-align:right;">
-              <a href="<?=$enllac?>" class="white-text"><?=$enllacText?></a>
-            </div>
-          </div>
-        </div>
-<?php
-}
+  <div class="card col s4"style="margin-right: 1%" >
+     <div class="card-content">
+       <span class="card-title activator grey-text text-darken-4"><?=$titol?> || <?=$data?><i class="material-icons right">more_vert</i></span>
+       <p><?=$noms?> | <a href="#">Details</a></p>
+     </div>
+     <div class="card-reveal">
+       <span class="card-title grey-text text-darken-4"><?=$titol?><i class="material-icons right">close</i></span>
+        <p><?=$desc?><br/>
+          <img src="http://maps.google.com/maps/api/staticmap?center=<?=$x?>,<?=$y?>&zoom=17&size=400x300&sensor=false" style="width: 400px; height: 400px;" />
+        </p>
+     </div>
+   </div>
 
-
-
-function SubjectsCards($color, $subject, $enllac){
-?>
-        <div class="col s3">
-          <a href="<?=$enllac?>" class="white-text">
-            <div class="card <?=$color?> hoverable">
-              <div class="card-content white-text">
-                <span class="card-title"><?=$subject?></span>
-              </div>
-            </div>
-          </a>
-        </div>
-<?php
-}
-
-function SubjectsCardsAlert($color, $subject, $enllac){
-?>
-
-        <div class="col s3">
-          <a href="<?=$enllac?>" class="white-text">
-            <div class="card <?=$color?> hoverable">
-              <div class="card-content white-text">
-                <span class="card-title"><?=$subject?><i class="material-icons right">notifications</i></span>
-              </div>
-            </div>
-          </a>
-        </div>
-
-<?php
-}
-
-/***************
-  Collections
-***************/
-
-function stuMiniCard($nom, $dni, $id){
-?>
-  <ul class="collection col s3 z-depth-1" style="">
-    <li class="collection-item avatar">
-      <img src="../../img/avatarNo.png" alt="" class="circle">
-      <span class="title"><?=$nom?></span>
-      <p><?=$dni?><br>
-        <a href="editStudent.php?id=<?=$id?>">Edit</a>
-      </p>
-      <a href="<?=$id?>" class="secondary-content"><i class="material-icons">delete</i></a>
-    </li>
-  </ul>
-<?php
-}
-
-function stuCards($nom, $dni, $id){
-?>
-        <div class="col s2">
-          <div class="card small">
-            <div class="card-image">
-              <img src="../../img/avatar.png" style="opacity: 0.25;">
-              <span class="card-title black-text"><?=$nom?></span>
-            </div>
-            <div class="card-content">
-              <p><?=$dni?></p>
-            </div>
-            <div class="card-action">
-              <a href="editStudent.php?id=<?=$id?>" class="materialize-red-text text-darken-2">Editar</a><a href="<?=$id?>" class="secondary-content materialize-red-text text-darken-2"><i class="material-icons">delete</i></a>
-            </div>
-          </div>
-        </div>
-<?php
-}
-
-function examMiniCard($date, $course, $note, $id){
-?>
-  <ul class="collection col s3 z-depth-1" style="">
-    <li class="collection-item avatar">
-      <i class="material-icons circle">insert_chart</i>
-      <span class="title"><?=date("d/m/Y", strtotime($date));?></span>
-      <p><!--<?=$course?> - --><?=$note?><br>
-        <a href="editExam.php?id=<?=$id?>">Editar</a>
-      </p>
-      <a href="<?=$id?>" class="secondary-content"><i class="material-icons">delete</i></a>
-    </li>
-  </ul>
-<?php
-}
-
-function examCards($date, $course, $note, $id){
-?>
-        <div class="col s2">
-          <div class="card small">
-            <div class="card-image">
-              <span class="card-title black-text"><?=$date?></span>
-            </div>
-            <div class="card-content">
-              <p><?=$course?> - <?=$note?></p>
-            </div>
-            <div class="card-action">
-              <a href="editExam.php?id=<?=$id?>" class="materialize-red-text text-darken-2">Editar</a><a href="<?=$id?>" class="secondary-content materialize-red-text text-darken-2"><i class="material-icons">delete</i></a>
-            </div>
-          </div>
-        </div>
-<?php
-}
-
-
-/***************
-     PINUPS
-***************/
-function subjectsRightMenu($code, $name)
-{
-?>
-<!-- MENU DE LA ESQUERRA -->
-</ul>
-</div>
-<div id="optionButtons" style="right: 95px;">
-  <ul class="section table-of-contents">
-    <li><a href="newExam.php?code=<?=$code?>&name=<?=$name?>">Afegir Examen</a></li>
-    <li><a href="subjectChart.php?code=<?=$code?>&name=<?=$name?>">Gràfic</a></li>
-  </ul>
-</div>
-<?php
+ <?php
 }
 
 ?>

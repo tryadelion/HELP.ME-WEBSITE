@@ -15,6 +15,13 @@ if(!isset($_SESSION['userName']))
 $uName=$_SESSION["userName"];
 $uId=$_SESSION["userId"];
 
+$connexio=connectDB();
+mysql_set_charset('utf8');
+
+$sql = "SELECT * FROM casefile WHERE location = 'Barcelona'";
+
+$connexio=connectDB();
+
 capcapST();
 ?>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
@@ -25,6 +32,15 @@ capcapEND();
 leftNAV(2);
 
 contentStart();
+/*
+$result = mysqli_query($connexio, $sql);
+
+while ($obj = mysqli_fetch_object($result)) {
+
+	//examMiniCard($obj->exam_date, $obj->name, $obj->type, $obj->qualif, $obj->id."&code=".$obj->code."&name=".$obj->name);
+	//caseFile($titol, $data, $noms, $desc, $x, $y)
+
+}*/
 ?>
 
 <div="row">
