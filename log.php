@@ -11,7 +11,7 @@ $uPass=$_POST['stu_uPass'];
 
 
 if (isset($_POST['signUp'])){
-
+  header("Location: choseSignup.php");
 }
 elseif (isset($_POST['signIn'])) {
   $_SESSION["userName"]="Kiwi";

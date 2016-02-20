@@ -27,18 +27,18 @@ header('Content-Type: text/html; charset=utf-8');
 <?php
 }
 
-function navBAR(){
+function navBAR($uName){
 ?>
   <header>
     <!-- NAV BAR -->
     <nav class="light-green" role="navigation">
       <div class="nav-wrapper container"><a id="logo-container" href="index.php" class="brand-logo">HELP.ME</a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="index.php"><i class="material-icons">notifications_none</i></a></li>
+          <li>Welcome <em><?=$uName?></em></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
-          <li><a href="index.php"><i class="material-icons">notifications_none</i></a></li>
+          <li>Welcome <em><?=$uName?></em></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>

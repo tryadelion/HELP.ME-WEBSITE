@@ -87,15 +87,37 @@
   position: relative;
 }
 
-/**************/
-/* LOGIN PAGE */
-/**************/
+/**************
+   LOGIN PAGE
+***************/
 #login-page {
   width: 306px;
   margin-top: 4%;
 }
 
 .login-form-text {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+
+/**************
+   CHOOSE PAGE 
+***************/
+#choose-login-page {
+  width: 306px;
+  margin-top: 24%;
+}
+
+/***************
+  REGISTER PAGE
+****************/
+#signup-page {
+  width: 420px;
+  margin-top: 4%;
+}
+
+.signup-form-text {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 0.8rem;

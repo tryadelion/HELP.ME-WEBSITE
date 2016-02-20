@@ -51,33 +51,16 @@ if(isset($_GET["msg"]))
 <body class="grey darken-4">
 
 
-<div id="login-page" class="row">
+<div id="choose-login-page" class="row">
   <div class="col s12 z-depth-4 card-panel grey darken-3">
 
-        <form action="log.php" method="POST">
-          <div class="row">
-      	    <div class="input-field col s12">
-      	      <img src="img/logo.png" class="circle responsive-img valign profile-image-login"/>
-      	    </div>
-          </div>
-      	  <div class="row">
-      	    <div class="input-field col s12">
-      	      <input id="stu_uName" name="stu_uName" type="text" class="validate">
-      	      <label for="stu_uName">Correu</label>
-      	    </div>
-          </div>
-      	  <div class="row">
-      	    <div class="input-field col s12">
-              <input id="stu_uPass" name="stu_uPass" type="password" class="validate">
-      	      <label for="stu_uPass">Password</label>
-      	    </div>
-      	  </div>
+        <form action="signup.php" method="POST">
       	  <div class="row">
       	    <div class="input-field col s6">
-      				<button class="btn waves-effect waves-light light-green darken-3" style="font-size:14px;" type="submit" name="signUp">Sign Up</button>
+      				<button class="btn waves-effect waves-light light-green darken-3" style="font-size:14px;" type="submit" name="signUp">Entity</button>
       	    </div>
 						<div class="input-field col s6">
-							<button class="btn waves-effect waves-light light-green" style="font-size:14px;" type="submit" name="signIn">Sign In</button>
+							<button class="btn waves-effect waves-light light-green" style="font-size:14px;" type="submit" name="signIn">Person</button>
 						</div>
       	  </div>
       	</form>

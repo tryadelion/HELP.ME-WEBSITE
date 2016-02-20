@@ -19,7 +19,7 @@ capcapST();
 ?>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <?php
-navBar();
+navBar($uName);
 capcapEND();
 
 leftNAV(0);
@@ -40,7 +40,7 @@ contentStart();
 	 var myLatlng = new google.maps.LatLng(41.3905404, 2.1130419);
 	 var marker = new google.maps.Marker({
     position: myLatlng,
-    title:"Hello World!"
+    title:"Help.Me"
 		});
 
 		// To add the marker to the map, call setMap();
