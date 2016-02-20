@@ -102,7 +102,7 @@
 }
 
 /**************
-   CHOOSE PAGE 
+   CHOOSE PAGE
 ***************/
 #choose-login-page {
   width: 306px;
@@ -121,4 +121,8 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 0.8rem;
+}
+
+.btn-bigger{
+      width: 250px;
 }

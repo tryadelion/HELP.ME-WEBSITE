@@ -15,12 +15,17 @@ header('Content-Type: text/html; charset=utf-8');
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <link rel="icon" type="image/png" href="http://example.com/logo.png" />
   <title>HELP.ME</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <script src="js/Chart.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
 </head>
 <body class="grey darken-3">
 
@@ -69,7 +74,7 @@ $normal[$which] = $active;
     <ul class="side-nav" style="padding-bottom:0;position: inherit;">
       <li <?=$normal[0]?>><a href="index.php"><i class="material-icons">map</i>Maps</a></li>
       <li <?=$normal[1]?>><a href="states.php"><i class="material-icons">assessment</i>Stadistics</a></li>
-      <li <?=$normal[2]?>><a href="#"><i class="material-icons">speaker_notes</i>Your cases</a></li>
+      <li <?=$normal[2]?>><a href="cases.php"><i class="material-icons">speaker_notes</i>Your cases</a></li>
       <li <?=$normal[3]?>><a href="#"><i class="material-icons">supervisor_account</i>Mediator</a></li>
       <!--<li <?=$normal[3]?>><a href="#"><i class="material-icons">settings</i>Settings</a></li>-->
       <li <?=$normal[4]?>><a href="logout.php"><i class="material-icons">vpn_key</i>Log Out</a></li>
