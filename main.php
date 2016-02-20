@@ -26,7 +26,7 @@ leftNAV();
 
 contentStart();
 ?>
-<div id="map" style="width: 400px; height: 300px"></div>
+<div id="map" class="col s12" style="height:550px;"></div>
 
 <script type="text/javascript">
 	 var myOptions = {
@@ -50,6 +50,6 @@ contentStart();
 <?php
 contentEnd();
 
-footer('style="position:fixed; bottom:0; width:100%;"');
-
+//footer('style="position:fixed; bottom:0; width:100%;"');
+footer("");
 ?>

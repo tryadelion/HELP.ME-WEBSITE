@@ -57,19 +57,21 @@ function capcapEND()
 <?php
 }
 
-function leftNAV(){
+function leftNAV($which){
+
+$normal = array("", "", "", "", "");
+$active =  "class='grey lighten-2'"
+
+$normal[$which] = $active
   ?>
 <!-- START LEFT NAV -->
   <div class="col s2" style="padding-left:0;">
     <ul class="side-nav" style="padding-bottom:0;position: inherit;">
-      <li><a href="index.php"><i class="material-icons">map</i>Maps</a></li>
-      <li><a href="#"><i class="material-icons">assessment</i>Stadistics</a></li>
-      <li><a href="#"><i class="material-icons">speaker_notes</i>Your cases</a></li>
-      <li><a href="#"><i class="material-icons">settings</i>Settings</a></li>
-      <li><a href="#"><i class="material-icons">vpn_key</i>Log Out</a></li>
-      <li><a href="#">&nbsp;</a></li>
-      <li><a href="#">&nbsp;</a></li>
-      <li><a href="#">&nbsp;</a></li>
+      <li <?=$normal[0]?>><a href="index.php"><i class="material-icons">map</i>Maps</a></li>
+      <li <?=$normal[1]?>><a href="#"><i class="material-icons">assessment</i>Stadistics</a></li>
+      <li <?=$normal[2]?>><a href="#"><i class="material-icons">speaker_notes</i>Your cases</a></li>
+      <li <?=$normal[3]?>><a href="#"><i class="material-icons">settings</i>Settings</a></li>
+      <li <?=$normal[4]?>><a href="#"><i class="material-icons">vpn_key</i>Log Out</a></li>
     </ul>
   </div>
   <!-- END LEFT NAV -->
@@ -79,7 +81,7 @@ function leftNAV(){
 function contentStart(){
 ?>
 <!-- START CONTENT -->
-<div class="col s10" style="padding-left:100px; padding-top:20px;">
+<div class="col s10" style="padding-top:1%; padding-left:2%;">
 <?php
 }
 
