@@ -22,7 +22,7 @@ capcapST();
 navBar();
 capcapEND();
 
-leftNAV();
+leftNAV(1);
 
 contentStart();
 ?>

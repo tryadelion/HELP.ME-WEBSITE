@@ -60,18 +60,19 @@ function capcapEND()
 function leftNAV($which){
 
 $normal = array("", "", "", "", "");
-$active =  "class='grey lighten-2'"
+$active =  "class='grey lighten-2'";
+$normal[$which] = $active;
 
-$normal[$which] = $active
   ?>
 <!-- START LEFT NAV -->
   <div class="col s2" style="padding-left:0;">
     <ul class="side-nav" style="padding-bottom:0;position: inherit;">
       <li <?=$normal[0]?>><a href="index.php"><i class="material-icons">map</i>Maps</a></li>
-      <li <?=$normal[1]?>><a href="#"><i class="material-icons">assessment</i>Stadistics</a></li>
+      <li <?=$normal[1]?>><a href="states.php"><i class="material-icons">assessment</i>Stadistics</a></li>
       <li <?=$normal[2]?>><a href="#"><i class="material-icons">speaker_notes</i>Your cases</a></li>
-      <li <?=$normal[3]?>><a href="#"><i class="material-icons">settings</i>Settings</a></li>
-      <li <?=$normal[4]?>><a href="#"><i class="material-icons">vpn_key</i>Log Out</a></li>
+      <li <?=$normal[3]?>><a href="#"><i class="material-icons">supervisor_account</i>Mediator</a></li>
+      <!--<li <?=$normal[3]?>><a href="#"><i class="material-icons">settings</i>Settings</a></li>-->
+      <li <?=$normal[4]?>><a href="logout.php"><i class="material-icons">vpn_key</i>Log Out</a></li>
     </ul>
   </div>
   <!-- END LEFT NAV -->

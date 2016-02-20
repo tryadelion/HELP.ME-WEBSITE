@@ -67,10 +67,10 @@ if(isset($_GET["msg"]))
       	  </div>
       	  <div class="row">
       	    <div class="input-field col s6">
-      				<button class="btn waves-effect waves-light light-green darken-3" style="font-size:14px;" type="submit">Sign Up</button>
+      				<button class="btn waves-effect waves-light light-green darken-3" style="font-size:14px;" type="submit" name="signUp">Sign Up</button>
       	    </div>
 						<div class="input-field col s6">
-							<button class="btn waves-effect waves-light light-green" style="font-size:14px;" type="submit">Sign In</button>
+							<button class="btn waves-effect waves-light light-green" style="font-size:14px;" type="submit" name="signIn">Sign In</button>
 						</div>
       	  </div>
       	</form>

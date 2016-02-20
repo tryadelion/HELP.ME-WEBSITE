@@ -9,10 +9,17 @@ $uPass=$_POST['stu_uPass'];
 
 //$uPass=sha1($uPass);
 
-$_SESSION["userName"]="Kiwi";
-$_SESSION["userId"]="1";
 
-header("Location: main.php");
+if (isset($_POST['signUp'])){
+
+}
+elseif (isset($_POST['signIn'])) {
+  $_SESSION["userName"]="Kiwi";
+  $_SESSION["userId"]="1";
+
+  header("Location: main.php");
+}
+
 
 /*
 $sql="SELECT * FROM user WHERE email='".$uName."' AND password='".$uPass."'";
