@@ -14,20 +14,25 @@ if (isset($_POST['signUp'])){
   header("Location: choseSignup.php");
 }
 elseif (isset($_POST['signIn'])) {
-  $sql="SELECT * FROM user WHERE email='".$uName."' AND password='".$uPass."'";
+  $sql="SELECT * FROM access_data WHERE username='".$uName."' AND pass='".$uPass."'";
   if($result = mysqli_query($connexio, $sql))
   {
     $rowcount=mysqli_num_rows($result);
     if($rowcount!=1){
-      header("Location: index.php?msg=1");
+      echo $sql;
+      //header("Location: index.php?msg=1");
     }
     else{
       $row = mysqli_fetch_assoc($result);
-      $_SESSION["usu"]=$row['first_name'];
-      $_SESSION["idUsu"]=$row['id'];
+      $_SESSION["userName"]=$row['username'];
+      $_SESSION["userId"]=$row['id'];
       header("Location: main.php");
     }
   }
+}
+else{
+  header("Location: index.php?msg=1");
+  echo $sql;
 }
 
 ?>

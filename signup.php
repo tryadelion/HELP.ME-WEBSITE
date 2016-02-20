@@ -78,9 +78,13 @@ if(isset($_GET["msg"]))
 						</div>
 					</div>
 					<div class="row">
-						<div class="input-field col s12">
+						<div class="input-field col s6">
 							<input id="fax" name="fax" type="text" class="validate" required>
 							<label for="fax">Fax</label>
+						</div>
+						<div class="input-field col s6">
+							<input id="location" name="location" type="text" class="validate" required>
+							<label for="location">Location</label>
 						</div>
 					</div>
 					<div class="row">
