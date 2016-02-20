@@ -1,0 +1,16 @@
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.side-nav a {
+    height: 68px;
+    line-height: 68px;
+}
+
+.side-nav i.material-icons{
+  top: 7px;
+  right: 8px;
+  position: relative;
+}
