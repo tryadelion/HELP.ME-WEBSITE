@@ -30,56 +30,53 @@ contentStart();
 
 <div style="float:left;width:50%">
   <div style="text-align:center;color:white;">
-    <h2>By zone </h2>
+    <h4>By zone </h4>
 </div>
 <form style="text-align:center;color:white;">
  <p style="text-align:left;margin-left:250px;color:white;">
-      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-      <label for="filled-in-box">Cities</label>
-    </p>
-    <p style="text-align:left;margin-left:250px;color:white;">
-          <input type="checkbox" class="filled-in" id="filled-in-box2" checked="checked" />
-          <label for="filled-in-box2">Regions</label>
-        </p>
-
-
-                      <a class="waves-effect waves-light btn-large"><div class="btn-bigger">Find by zone</div></a>
-
-
+    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+    <label for="filled-in-box">Cities</label>
+  </p>
+  <p style="text-align:left;margin-left:250px;color:white;">
+    <input type="checkbox" class="filled-in" id="filled-in-box2" checked="checked" />
+    <label for="filled-in-box2">Regions</label>
+  </p>
+	<a class="waves-effect waves-light btn-large light-green"><div class="btn-bigger">Find by zone</div></a>
 </form>
 </div>
 <div style="float:left;width:50%">
   <div style="text-align:center;color:white;">
-    <h2>By population </h2>
+    <h4>By population </h4>
 </div>
 <form style="text-align:center;color:white;">
  <p style="text-align:left;margin-left:250px;color:white;">
-      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-      <label for="filled-in-box">Men</label>
+    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+    <label for="filled-in-box">Men</label>
+  </p>
+  <p style="text-align:left;margin-left:250px;color:white;">
+    <input type="checkbox" class="filled-in" id="filled-in-box2" checked="checked" />
+    <label for="filled-in-box2">Women</label>
+  </p>
+</form>
+<form style="text-align:center;color:white;">
+ <p style="text-align:left;margin-left:250px;color:white;">
+    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+    <label for="filled-in-box">Age 1-12</label>
+  </p>
+  <p style="text-align:left;margin-left:250px;color:white;">
+    <input type="checkbox" class="filled-in" id="filled-in-box2" checked="checked" />
+    <label for="filled-in-box2">Age 12-16</label>
+  </p>
+ <p style="text-align:left;margin-left:250px;color:white;">
+    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+    <label for="filled-in-box">Age 16-20</label>
+  </p>
+  <p style="text-align:left;margin-left:250px;color:white;">
+      <input type="checkbox" class="filled-in" id="filled-in-box2" checked="checked" />
+      <label for="filled-in-box2">Age >20</label>
     </p>
-    <p style="text-align:left;margin-left:250px;color:white;">
-          <input type="checkbox" class="filled-in" id="filled-in-box2" checked="checked" />
-          <label for="filled-in-box2">Women</label>
-        </p>
-        <form style="text-align:center;color:white;">
-         <p style="text-align:left;margin-left:250px;color:white;">
-              <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-              <label for="filled-in-box">Age 1-12</label>
-            </p>
-            <p style="text-align:left;margin-left:250px;color:white;">
-                  <input type="checkbox" class="filled-in" id="filled-in-box2" checked="checked" />
-                  <label for="filled-in-box2">Age 12-16</label>
-                </p>
-                <form style="text-align:center;color:white;">
-                 <p style="text-align:left;margin-left:250px;color:white;">
-                      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-                      <label for="filled-in-box">Age 16-20</label>
-                    </p>
-                    <p style="text-align:left;margin-left:250px;color:white;">
-                          <input type="checkbox" class="filled-in" id="filled-in-box2" checked="checked" />
-                          <label for="filled-in-box2">Age >20</label>
-                        </p>
-<a class="waves-effect waves-light btn-large"><div class="btn-bigger">Find by population</div></a>
+		<a class="waves-effect waves-light btn-large light-green"><div class="btn-bigger">Find by population</div></a>
+</form>
 
 
 

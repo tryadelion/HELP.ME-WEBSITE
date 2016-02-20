@@ -67,6 +67,11 @@
    textarea.materialize-textarea:focus:not([readonly]) + label {
      color: #8bc34a ;
    }
+
+   [type="checkbox"].filled-in:checked + label:after {
+    border: 2px solid #8bc34a;
+    background-color: #8bc34a;
+}
  /*******************
    END LABELS COLORS
  ********************/
