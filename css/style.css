@@ -1,3 +1,75 @@
+/***************
+  LABELS COLORS
+****************/
+
+/* label color */
+   .input-field label {
+     color: #8bc34a ;
+   }
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #8bc34a ;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #8bc34a ;
+  box-shadow: 0 1px 0 0 #8bc34a ;
+}
+/* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #8bc34a ;
+   }
+
+   input:not([type]),
+   input[type=text],
+   input[type=password],
+   input[type=email],
+   input[type=url],
+   input[type=time],
+   input[type=date],
+   input[type=datetime-local],
+   input[type=tel],
+   input[type=number],
+   input[type=search],
+   textarea.materialize-textarea {
+     border-bottom: 1px solid #8bc34a ;
+     color: #8bc34a ;
+   }
+
+   input:not([type]):focus:not([readonly]),
+   input[type=text]:focus:not([readonly]),
+   input[type=password]:focus:not([readonly]),
+   input[type=email]:focus:not([readonly]),
+   input[type=url]:focus:not([readonly]),
+   input[type=time]:focus:not([readonly]),
+   input[type=date]:focus:not([readonly]),
+   input[type=datetime-local]:focus:not([readonly]),
+   input[type=tel]:focus:not([readonly]),
+   input[type=number]:focus:not([readonly]),
+   input[type=search]:focus:not([readonly]),
+   textarea.materialize-textarea:focus:not([readonly]) {
+     border-bottom: 1px solid #8bc34a ;
+     box-shadow: 0 1px 0 0 #8bc34a ;
+   }
+
+   input:not([type]):focus:not([readonly]) + label,
+   input[type=text]:focus:not([readonly]) + label,
+   input[type=password]:focus:not([readonly]) + label,
+   input[type=email]:focus:not([readonly]) + label,
+   input[type=url]:focus:not([readonly]) + label,
+   input[type=time]:focus:not([readonly]) + label,
+   input[type=date]:focus:not([readonly]) + label,
+   input[type=datetime-local]:focus:not([readonly]) + label,
+   input[type=tel]:focus:not([readonly]) + label,
+   input[type=number]:focus:not([readonly]) + label,
+   input[type=search]:focus:not([readonly]) + label,
+   textarea.materialize-textarea:focus:not([readonly]) + label {
+     color: #8bc34a ;
+   }
+ /*******************
+   END LABELS COLORS
+ ********************/
 @media only screen and (min-width: 1200px) {
   .container {
     width: 100%;
@@ -13,4 +85,18 @@
   top: 7px;
   right: 8px;
   position: relative;
+}
+
+/**************/
+/* LOGIN PAGE */
+/**************/
+#login-page {
+  width: 306px;
+  margin-top: 4%;
+}
+
+.login-form-text {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
 }
