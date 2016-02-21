@@ -12,7 +12,7 @@ $uName=$_SESSION["userName"];
 $uId=$_SESSION["userId"];
 
 $connexio=connectDB();
-mysql_set_charset('utf8');
+//mysql_set_charset('utf8');
 
 $sql = "SELECT c.title, c.coordX, c.coordY, c.description, date_format(c.dataIncident, '%d/%m/%Y') as dataIncident, u.name, u.surname  FROM casefile c, user_data u WHERE c.location = 'Barcelona' AND c.id_user=u.id";
 //echo $sql;
