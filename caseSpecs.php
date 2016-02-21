@@ -25,8 +25,10 @@ leftNAV(2);
 
 contentStart();
 
-$sql="SELECT c.title, c.coordX, c.coordY, c.description, date_format(c.dataIncident, '%d/%m/%Y') as dataIncident, u.name pname, u.surname psurname, m.name tname, m.surname tsurname FROM casefile c, user_data u, med_data m WHERE c.assignedMentor=m.id AND c.id_user=u.id AND c.id='".$caseID."'";
-
+$sql="SELECT c.title, c.coordX, c.coordY, c.description, DATE_FORMAT( c.dataIncident,  '%d/%m/%Y' ) AS dataIncident, u.name pname, u.surname psurname
+FROM casefile c, user_data u
+WHERE c.id_user = u.id_access
+AND c.id =".$caseID;
 $result = mysqli_query($connexio, $sql);
 if($result !=NULL)
 	$row = mysqli_fetch_assoc($result);

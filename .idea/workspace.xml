@@ -83,11 +83,12 @@
       <file leaf-file-name="caseSpecs.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/caseSpecs.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22247191">
-              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.60674155">
+              <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <marker date="1456050665333" expanded="true" signature="432:717" placeholder="SELECT c.tit... casefile" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
+                <marker date="1456051006587" expanded="true" signature="432:645" placeholder="SELECT c.tit... casefile" />
               </folding>
             </state>
           </provider>
@@ -412,11 +413,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/caseSpecs.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22247191">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.60674155">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1456050665333" expanded="true" signature="432:717" placeholder="SELECT c.tit... casefile" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1456051006587" expanded="true" signature="432:645" placeholder="SELECT c.tit... casefile" />
           </folding>
         </state>
       </provider>
