@@ -75,7 +75,7 @@ $normal[$which] = $active;
       <li <?=$normal[0]?>><a href="index.php"><i class="material-icons">map</i>Maps</a></li>
       <li <?=$normal[1]?>><a href="states.php"><i class="material-icons">assessment</i>Stadistics</a></li>
       <li <?=$normal[2]?>><a href="cases.php"><i class="material-icons">speaker_notes</i>Your cases</a></li>
-      <li <?=$normal[3]?>><a href="#"><i class="material-icons">supervisor_account</i>Mediator</a></li>
+      <!--<li <?=$normal[3]?>><a href="#"><i class="material-icons">supervisor_account</i>Mediator</a></li>-->
       <!--<li <?=$normal[3]?>><a href="#"><i class="material-icons">settings</i>Settings</a></li>-->
       <li <?=$normal[4]?>><a href="logout.php"><i class="material-icons">vpn_key</i>Log Out</a></li>
     </ul>

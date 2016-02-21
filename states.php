@@ -46,7 +46,7 @@ contentStart();
 				</div>
 				<p></p><h4>BY GENRE</h4></p>
 				<!--<button style="width:100%;height:80px;color:black;">BUTTON</button>-->
-				<a class="waves-effect waves-light btn-large light-green" style="margin-top: 25%;" href="Filters.php"><div class="btn-bigger">More</div></a>
+				<!--<a class="waves-effect waves-light btn-large light-green" style="margin-top: 25%;" href="Filters.php"><div class="btn-bigger">More</div></a>-->
 	</div>
 
 	<div class="center-align white-text col s4">
