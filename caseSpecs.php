@@ -35,7 +35,7 @@ if($result !=NULL)
 else
 	$row=null;
 disconnectDB($connexio);
-echo $sql;
+//echo $sql;
 ?>
 
 <div class="light-green left-align white-text" style="margin-right:10%; height:100%; padding:20px;" >
@@ -43,14 +43,12 @@ echo $sql;
 	<p>
 	</p> <h4>	<?php  echo $row['title'];?> </h4>
 
-	<p><h4>DESCRIPCIÓ  </h4>
+	<p><h5>DESCRIPCIÓ  </h5>
 	</p>	<?php echo $row['description'];?>
-	<p><h4>DATA  </h4>
+	<p><h5>DATA  </h5>
 	</p>	<?php echo $row['dataIncident'];?>
-	<p><h4>NOM PERSONA  </h4>
+	<p><h5>NOM PERSONA  </h5>
 	</p>	<?php  echo $row['pname']." ".$row['psurname']; ?>
-	<p><h4>NOM CONSELLER  </h4>
-	</p>	<?php  echo $row['tname']." ".$row['tsurname']; ?>
 </div>
 
 <?php
