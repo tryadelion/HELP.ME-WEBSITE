@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cf51240-478f-4dfc-a083-19f5fe514226" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.php" afterPath="$PROJECT_DIR$/main.php" />
     </list>
     <ignored path="HELP.ME-WEBSITE.iws" />
@@ -66,11 +67,11 @@
       <file leaf-file-name="main.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44444445">
-              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.3838384">
+              <caret line="42" column="45" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
               <folding>
                 <element signature="e#483#504#0#HTML" expanded="true" />
-                <marker date="1456039646269" expanded="true" signature="1040:1083" placeholder="SELECT title... casefile" />
+                <marker date="1456040845938" expanded="true" signature="1039:1082" placeholder="SELECT title... casefile" />
               </folding>
             </state>
           </provider>
@@ -269,7 +270,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#483#504#0#HTML" expanded="true" />
-            <marker date="1456039646269" expanded="true" signature="1040:1083" placeholder="SELECT title... casefile" />
+            <marker date="1456040845938" expanded="true" signature="1039:1082" placeholder="SELECT title... casefile" />
           </folding>
         </state>
       </provider>
@@ -344,13 +345,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/img/marcador.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44444445">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.3838384">
+          <caret line="42" column="45" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
           <folding>
             <element signature="e#483#504#0#HTML" expanded="true" />
-            <marker date="1456039646269" expanded="true" signature="1040:1083" placeholder="SELECT title... casefile" />
+            <marker date="1456040845938" expanded="true" signature="1039:1082" placeholder="SELECT title... casefile" />
           </folding>
         </state>
       </provider>

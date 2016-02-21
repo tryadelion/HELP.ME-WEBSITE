@@ -30,8 +30,8 @@ contentStart();
 
 <script type="text/javascript">
 	 var myOptions = {
-			zoom: 14,
-			center: new google.maps.LatLng(41.3905404, 2.1130419),
+			zoom: 10,
+			center: new google.maps.LatLng(41.747991,1.574167),
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 	 };
 
@@ -40,7 +40,7 @@ contentStart();
          url: "img/marcador.png", // url
          scaledSize: new google.maps.Size(80, 80), // scaled size
          origin: new google.maps.Point(0,0), // origin
-         anchor: new google.maps.Point(0, 0) // anchor
+         anchor: new google.maps.Point(13, 27) // anchor
      };
 <?php
 $connexio=connectDB();
@@ -66,7 +66,7 @@ if($result = mysqli_query($connexio, $sql))
             title:'".$fila[0]."'
                 });
             marker".$i.".addListener('click', function() {
-                window.location.href = 'http://help-mii.esy.es/case.php?caseId=".$fila[3]."';
+                window.location.href = 'http://help-mii.esy.es/caseSpecs.php?caseId=".$fila[3]."';
             });
                 // To add the marker to the map, call setMap();
                 marker".$i.".setMap(map);";
