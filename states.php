@@ -156,37 +156,79 @@ var pieData2 = [
 		];
 
 		var pieData3 = [
-				{
-					value: 300,
-					color:"#F7464A",
-					highlight: "#FF5A5E",
-					label: "Red"
-				},
-				{
-					value: 50,
-					color: "#46BFBD",
-					highlight: "#5AD3D1",
-					label: "Green"
-				},
-				{
-					value: 100,
-					color: "#FDB45C",
-					highlight: "#FFC870",
-					label: "Yellow"
-				},
-				{
-					value: 40,
-					color: "#949FB1",
-					highlight: "#A8B3C5",
-					label: "Grey"
-				},
-				{
-					value: 120,
-					color: "#4D5360",
-					highlight: "#616774",
-					label: "Dark Grey"
-				}
+            <?php
+                $sql = "select ud.age as age from user_data ud,casefile cs where cs.id_user=ud.id_access";
+                $connexio=connectDB();
+                if($result = mysqli_query($connexio, $sql))
+                {
+                    $rowcount=mysqli_num_rows($result);
+                    if($rowcount<1){
+                        echo "no results";
+                        //header("Location: main.php?msg=1");
+                    }
+                    else{
+                        $str = "";
+                        $i = 0;
+                        $childs = 0;
+                        $preteens = 0;
+                        $youngs = 0;
+                        $universitaries = 0;
+                        $older = 0;
+                        while ($fila=mysqli_fetch_row($result))
+                        {
+                            $age = $fila[0];
+                            if($age<12){
+                                $childs++;
+                            }else if($age < 14){
+                                $preteens++;
+                            }else if($age < 18){
+                                $youngs++;
+                            }else if($age < 24){
+                                $universitaries++;
+                            }else{
+                                $older++;
+                            }
 
+                        }
+                        $str = "{
+                        value: '".$childs."',
+                        color:'#".random_color()."',
+                        highlight: '#".random_color()."',
+                        label: 'Younger than 12'
+                    },";
+                        echo $str;
+                        $str = "{
+                        value: '".$preteens."',
+                        color:'#".random_color()."',
+                        highlight: '#".random_color()."',
+                        label: 'Between 12 and 14'
+                    },";
+                        echo $str;
+                        $str = "{
+                        value: '".$youngs."',
+                        color:'#".random_color()."',
+                        highlight: '#".random_color()."',
+                        label: 'Between 14 and 18'
+                    },";
+                        echo $str;
+                        $str = "{
+                        value: '".$universitaries."',
+                        color:'#".random_color()."',
+                        highlight: '#".random_color()."',
+                        label: 'Between 18 and 24'
+                    },";
+                        echo $str;
+                        $str = "{
+                        value: '".$older."',
+                        color:'#".random_color()."',
+                        highlight: '#".random_color()."',
+                        label: 'Older than 24'
+                    }";
+                        echo $str;
+                    }
+                }
+                disconnectDB($connexio);
+                ?>
 			];
 
 
