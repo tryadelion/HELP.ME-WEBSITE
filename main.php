@@ -26,7 +26,7 @@ leftNAV(0);
 
 contentStart();
 ?>
-<div id="map" class="col s12" style="height:550px;"></div>
+<div id="map" class="col s12" style="height:830px;"></div>
 
 <script type="text/javascript">
 	 var myOptions = {
@@ -44,7 +44,7 @@ contentStart();
      };
 <?php
 $connexio=connectDB();
-$sql="SELECT title,coordX,coordY FROM casefile";
+$sql="SELECT title,coordX,coordY,id FROM casefile";
 if($result = mysqli_query($connexio, $sql))
 {
     $rowcount=mysqli_num_rows($result);
@@ -63,9 +63,11 @@ if($result = mysqli_query($connexio, $sql))
              var marker".$i." = new google.maps.Marker({
             position: myLatlng".$i.",
             icon:icon,
-            title:\"".$fila[0]."\"
+            title:'".$fila[0]."'
                 });
-
+            marker".$i.".addListener('click', function() {
+                window.location.href = 'http://help-mii.esy.es/case.php?caseId=".$fila[3]."';
+            });
                 // To add the marker to the map, call setMap();
                 marker".$i.".setMap(map);";
             echo $str;
@@ -81,5 +83,5 @@ if($result = mysqli_query($connexio, $sql))
 <?php
 contentEnd();
 
-//footer('style="position:fixed; bottom:0; width:100%;"');
-footer(' ');
+footer('style="position:fixed; bottom:0; width:100%;"');
+//footer(' ');

@@ -27,7 +27,7 @@
       <file leaf-file-name="log.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/log.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-15.333333">
               <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
               <folding>
                 <marker date="1456007764082" expanded="true" signature="260:274" placeholder="SELECT * FRO... user" />
@@ -40,8 +40,8 @@
       <file leaf-file-name="action.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/action.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.0">
-              <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="26" />
+            <state vertical-scroll-proportion="-9.666667">
+              <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
               <folding>
                 <marker date="1456010022438" expanded="true" signature="271:299" placeholder="INSERT INTO access_data... " />
                 <marker date="1456010022438" expanded="true" signature="271:326" placeholder="INSERT INTO access_data... " />
@@ -66,10 +66,11 @@
       <file leaf-file-name="main.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2929293">
-              <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.44444445">
+              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
               <folding>
-                <marker date="1456015954935" expanded="true" signature="1040:1080" placeholder="SELECT title... casefile" />
+                <element signature="e#483#504#0#HTML" expanded="true" />
+                <marker date="1456039646269" expanded="true" signature="1040:1083" placeholder="SELECT title... casefile" />
               </folding>
             </state>
           </provider>
@@ -133,6 +134,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -167,8 +170,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -241,41 +242,6 @@
     <entry file="file://$PROJECT_DIR$/action.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1456010022438" expanded="true" signature="271:299" placeholder="INSERT INTO access_data... " />
-            <marker date="1456010022438" expanded="true" signature="271:326" placeholder="INSERT INTO access_data... " />
-            <marker date="1456010022438" expanded="true" signature="271:328" placeholder="INSERT INTO access_data... " />
-            <marker date="1456010022438" expanded="true" signature="271:341" placeholder="INSERT INTO access_data... " />
-            <marker date="1456010022438" expanded="true" signature="271:352" placeholder="INSERT INTO access_data... " />
-            <marker date="1456010022438" expanded="true" signature="271:356" placeholder="INSERT INTO access_data... " />
-            <marker date="1456010022438" expanded="true" signature="271:364" placeholder="INSERT INTO access_data... " />
-            <marker date="1456010022438" expanded="true" signature="372:386" placeholder="/* ${$subjec... " />
-            <marker date="1456010022438" expanded="true" signature="547:578" placeholder="SELECT max(i... access_data" />
-            <marker date="1456010022438" expanded="true" signature="764:867" placeholder="INSERT INTO entity_data... " />
-            <marker date="1456010022438" expanded="true" signature="764:900" placeholder="INSERT INTO entity_data... " />
-            <marker date="1456010022438" expanded="true" signature="764:915" placeholder="INSERT INTO entity_data... " />
-            <marker date="1456010022438" expanded="true" signature="764:927" placeholder="INSERT INTO entity_data... " />
-            <marker date="1456010022438" expanded="true" signature="764:940" placeholder="INSERT INTO entity_data... " />
-            <marker date="1456010022438" expanded="true" signature="764:953" placeholder="INSERT INTO entity_data... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
-          <folding>
-            <marker date="1456007764082" expanded="true" signature="260:274" placeholder="SELECT * FRO... user" />
-            <marker date="1456007764082" expanded="true" signature="260:335" placeholder="SELECT * FRO... access_data" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/action.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.0">
           <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="26" />
           <folding>
             <marker date="1456010022438" expanded="true" signature="271:299" placeholder="INSERT INTO access_data... " />
@@ -299,10 +265,92 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2929293">
-          <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1456015954935" expanded="true" signature="1040:1080" placeholder="SELECT title... casefile" />
+            <element signature="e#483#504#0#HTML" expanded="true" />
+            <marker date="1456039646269" expanded="true" signature="1040:1083" placeholder="SELECT title... casefile" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+          <folding>
+            <marker date="1456007764082" expanded="true" signature="260:274" placeholder="SELECT * FRO... user" />
+            <marker date="1456007764082" expanded="true" signature="260:335" placeholder="SELECT * FRO... access_data" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1456010022438" expanded="true" signature="271:299" placeholder="INSERT INTO access_data... " />
+            <marker date="1456010022438" expanded="true" signature="271:326" placeholder="INSERT INTO access_data... " />
+            <marker date="1456010022438" expanded="true" signature="271:328" placeholder="INSERT INTO access_data... " />
+            <marker date="1456010022438" expanded="true" signature="271:341" placeholder="INSERT INTO access_data... " />
+            <marker date="1456010022438" expanded="true" signature="271:352" placeholder="INSERT INTO access_data... " />
+            <marker date="1456010022438" expanded="true" signature="271:356" placeholder="INSERT INTO access_data... " />
+            <marker date="1456010022438" expanded="true" signature="271:364" placeholder="INSERT INTO access_data... " />
+            <marker date="1456010022438" expanded="true" signature="372:386" placeholder="/* ${$subjec... " />
+            <marker date="1456010022438" expanded="true" signature="547:578" placeholder="SELECT max(i... access_data" />
+            <marker date="1456010022438" expanded="true" signature="764:867" placeholder="INSERT INTO entity_data... " />
+            <marker date="1456010022438" expanded="true" signature="764:900" placeholder="INSERT INTO entity_data... " />
+            <marker date="1456010022438" expanded="true" signature="764:915" placeholder="INSERT INTO entity_data... " />
+            <marker date="1456010022438" expanded="true" signature="764:927" placeholder="INSERT INTO entity_data... " />
+            <marker date="1456010022438" expanded="true" signature="764:940" placeholder="INSERT INTO entity_data... " />
+            <marker date="1456010022438" expanded="true" signature="764:953" placeholder="INSERT INTO entity_data... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.333333">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+          <folding>
+            <marker date="1456007764082" expanded="true" signature="260:274" placeholder="SELECT * FRO... user" />
+            <marker date="1456007764082" expanded="true" signature="260:335" placeholder="SELECT * FRO... access_data" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.666667">
+          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+          <folding>
+            <marker date="1456010022438" expanded="true" signature="271:299" placeholder="INSERT INTO access_data... " />
+            <marker date="1456010022438" expanded="true" signature="271:326" placeholder="INSERT INTO access_data... " />
+            <marker date="1456010022438" expanded="true" signature="271:328" placeholder="INSERT INTO access_data... " />
+            <marker date="1456010022438" expanded="true" signature="271:341" placeholder="INSERT INTO access_data... " />
+            <marker date="1456010022438" expanded="true" signature="271:352" placeholder="INSERT INTO access_data... " />
+            <marker date="1456010022438" expanded="true" signature="271:356" placeholder="INSERT INTO access_data... " />
+            <marker date="1456010022438" expanded="true" signature="271:364" placeholder="INSERT INTO access_data... " />
+            <marker date="1456010022438" expanded="true" signature="372:386" placeholder="/* ${$subjec... " />
+            <marker date="1456010022438" expanded="true" signature="547:578" placeholder="SELECT max(i... access_data" />
+            <marker date="1456010022438" expanded="true" signature="764:867" placeholder="INSERT INTO entity_data... " />
+            <marker date="1456010022438" expanded="true" signature="764:900" placeholder="INSERT INTO entity_data... " />
+            <marker date="1456010022438" expanded="true" signature="764:915" placeholder="INSERT INTO entity_data... " />
+            <marker date="1456010022438" expanded="true" signature="764:927" placeholder="INSERT INTO entity_data... " />
+            <marker date="1456010022438" expanded="true" signature="764:940" placeholder="INSERT INTO entity_data... " />
+            <marker date="1456010022438" expanded="true" signature="764:953" placeholder="INSERT INTO entity_data... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44444445">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+          <folding>
+            <element signature="e#483#504#0#HTML" expanded="true" />
+            <marker date="1456039646269" expanded="true" signature="1040:1083" placeholder="SELECT title... casefile" />
           </folding>
         </state>
       </provider>
