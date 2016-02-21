@@ -36,6 +36,12 @@ contentStart();
 	 };
 
 	 var map = new google.maps.Map(document.getElementById("map"), myOptions);
+     var icon = {
+         url: "img/marcador.png", // url
+         scaledSize: new google.maps.Size(80, 80), // scaled size
+         origin: new google.maps.Point(0,0), // origin
+         anchor: new google.maps.Point(0, 0) // anchor
+     };
 <?php
 $connexio=connectDB();
 $sql="SELECT title,coordX,coordY FROM casefile";
@@ -56,6 +62,7 @@ if($result = mysqli_query($connexio, $sql))
              var myLatlng".$i." = new google.maps.LatLng(".$fila[1].",".$fila[2].");
              var marker".$i." = new google.maps.Marker({
             position: myLatlng".$i.",
+            icon:icon,
             title:\"".$fila[0]."\"
                 });
 

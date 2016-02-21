@@ -66,10 +66,10 @@
       <file leaf-file-name="main.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75757575">
-              <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.2929293">
+              <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
               <folding>
-                <marker date="1456014790398" expanded="true" signature="797:837" placeholder="SELECT title... casefile" />
+                <marker date="1456015954935" expanded="true" signature="1040:1080" placeholder="SELECT title... casefile" />
               </folding>
             </state>
           </provider>
@@ -103,7 +103,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="105" />
+    <option name="x" value="295" />
     <option name="y" value="25" />
     <option name="width" value="1210" />
     <option name="height" value="1038" />
@@ -151,6 +151,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HELP.ME-WEBSITE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HELP.ME-WEBSITE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -175,7 +189,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="105" y="25" width="1210" height="1038" extended-state="0" />
+    <frame x="295" y="25" width="1210" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28842977" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -285,10 +299,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75757575">
-          <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.2929293">
+          <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
           <folding>
-            <marker date="1456014790398" expanded="true" signature="797:837" placeholder="SELECT title... casefile" />
+            <marker date="1456015954935" expanded="true" signature="1040:1080" placeholder="SELECT title... casefile" />
           </folding>
         </state>
       </provider>
