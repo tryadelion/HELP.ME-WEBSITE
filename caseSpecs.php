@@ -25,7 +25,7 @@ leftNAV(2);
 
 contentStart();
 
-$sql="SELECT c.title, c.coordX, c.coordY, c.description, date_format(c.dataIncident, '%d/%m/%Y') as dataIncident, u.name pname, u.surname psurname, m.name mname, m.surname msurname FROM casefile c, user_data u, med_data m WHERE c.assignedMentor=m.id AND c.id_user=u.id AND c.id='".$caseID."'";
+$sql="SELECT c.title, c.coordX, c.coordY, c.description, date_format(c.dataIncident, '%d/%m/%Y') as dataIncident, u.name pname, u.surname psurname, m.name tname, m.surname tsurname FROM casefile c, user_data u, med_data m WHERE c.assignedMentor=m.id AND c.id_user=u.id AND c.id='".$caseID."'";
 
 $result = mysqli_query($connexio, $sql);
 if($result !=NULL)
@@ -33,11 +33,23 @@ if($result !=NULL)
 else
 	$row=null;
 
-echo $sql;
+//echo $sql;
+/*
+
+PER A ESCRIURE EL TEXT QUE TOQUI, EN LLOC DE FICAR LOREM IPSUM O ALTRES COSES FES SERVIR AIXÒ
+TITOL -> <?=$row['title']?>
+COORDENADES X -> <?=$row['coordX']?>
+COORDENADES Y -> <?=$row['coordY']?>
+DESCRIPCIO -> <?=$row['description']?>
+DATA -> <?=$row['dataIncident']?>
+NOM PERSONA -> <? echo $row['pname']." ".$row['psurname']; ?>
+NOM CONSELLER -> <? echo $row['tname']." ".$row['tsurname']; ?>
+*/
 ?>
 
+<!--EXEMPLE Q POTS BORRAR-->
 <div class="row">
-	<div class="col s12 m7">
+	<div class="col s12">
 		<div class="card">
 			<div class="card-image">
 				<img class="activator"  style="width: 390px; height: 250px;margin-left: 18px;" src="http://maps.google.com/maps/api/staticmap?center=<?=$row['coordX']?>,<?=$row['coordY']?>&zoom=17&size=400x300&sensor=false&markers=color:green%7C<?=$row['coordX']?>,<?=$row['coordY']?>"/>
@@ -49,16 +61,6 @@ echo $sql;
 			</div>
 			<div class="card-action">
 				<a href="#">This is a link</a>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col s12 m5">
-		<div class="card-panel teal">
-			<div class="card-image">
-				<img class="activator"  style="width: 390px; height: 250px;margin-left: 18px;" src="http://maps.google.com/maps/api/staticmap?center=<?=$row['coordX']?>,<?=$row['coordY']?>&zoom=17&size=400x300&sensor=false&markers=color:green%7C<?=$row['coordX']?>,<?=$row['coordY']?>"/>
 			</div>
 		</div>
 	</div>
