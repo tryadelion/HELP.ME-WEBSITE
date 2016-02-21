@@ -36,15 +36,39 @@ contentStart();
 	 };
 
 	 var map = new google.maps.Map(document.getElementById("map"), myOptions);
+<?php
+$connexio=connectDB();
+$sql="SELECT title,coordX,coordY FROM casefile";
+if($result = mysqli_query($connexio, $sql))
+{
+    $rowcount=mysqli_num_rows($result);
+    if($rowcount<1){
+        echo "no results";
+        //header("Location: main.php?msg=1");
+    }
+    else{
+        $str = "";
+        $i = 0;
+        while ($fila=mysqli_fetch_row($result))
+        {
+            $i++;
+            $str = "
+             var myLatlng".$i." = new google.maps.LatLng(".$fila[1].",".$fila[2].");
+             var marker".$i." = new google.maps.Marker({
+            position: myLatlng".$i.",
+            title:\"".$fila[0]."\"
+                });
 
-	 var myLatlng = new google.maps.LatLng(41.3905404, 2.1130419);
-	 var marker = new google.maps.Marker({
-    position: myLatlng,
-    title:"Help.Me"
-		});
+                // To add the marker to the map, call setMap();
+                marker".$i.".setMap(map);";
+            echo $str;
+        }
 
-		// To add the marker to the map, call setMap();
-		marker.setMap(map);
+    }
+
+    disconnectDB($connexio);
+}
+?>
 
 </script>
 <?php
