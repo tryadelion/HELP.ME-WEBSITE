@@ -165,14 +165,16 @@ function blueCards($titol, $text, $list,$add){
 function caseFile($titol, $data, $noms, $desc, $x, $y){
 ?>
   <div class="card col s4"style="margin-right: 1%" >
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator"  style="width: 300px; height: 250px;margin-left: 18px;" src="http://maps.google.com/maps/api/staticmap?center=<?=$x?>,<?=$y?>&zoom=17&size=400x300&sensor=false&markers=color:green%7C<?=$x?>,<?=$y?>"/>
+    </div>
      <div class="card-content">
-       <span class="card-title activator grey-text text-darken-4"><?=$titol?> || <?=$data?><i class="material-icons right">more_vert</i></span>
+       <span class="card-title activator grey-text text-darken-4"><?=$titol?><br/><?=$data?><i class="material-icons right">more_vert</i></span>
        <p><?=$noms?> | <a href="#">Details</a></p>
      </div>
      <div class="card-reveal">
        <span class="card-title grey-text text-darken-4"><?=$titol?><i class="material-icons right">close</i></span>
         <p><?=$desc?><br/>
-          <img src="http://maps.google.com/maps/api/staticmap?center=<?=$x?>,<?=$y?>&zoom=17&size=400x300&sensor=false" style="width: 400px; height: 400px;" />
         </p>
      </div>
    </div>

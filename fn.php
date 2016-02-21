@@ -6,18 +6,16 @@ function connectDB(){
   $host="localhost"; //servidor BBDD
   $user="root"; //nom usuari
   $pass=""; //contrasenya
-  $BD="jsonize"; //nom de la BBDD
   $BD="helpme"; //nom de la BBDD
 
 
   /* HOST */
-
-  $host="mysql.hostytec.es"; //servidor BBDD
+/*
   $host="mysql.hostinger.es"; //servidor BBDD
   $user="u979048689_adm"; //nom usuari
   $pass="help42"; //contrasenya
   $BD="u979048689_help"; //nom de la BBDD
-
+*/
 
 
   //$conexion = mysqli_connect("mysql.smartfreehosting.net", "u707619475_json", "jsonize", "u707619475_json");

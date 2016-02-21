@@ -82,5 +82,4 @@ if($result = mysqli_query($connexio, $sql))
 contentEnd();
 
 //footer('style="position:fixed; bottom:0; width:100%;"');
-footer("");
-?>
+footer(' ');
