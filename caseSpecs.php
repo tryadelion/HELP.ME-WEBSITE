@@ -10,7 +10,7 @@ if(!isset($_SESSION['userName']))
 $uName=$_SESSION["userName"];
 
 $uId=$_SESSION["userId"];
-$caseID=$_GET['Id'];
+$caseID=$_GET['caseId'];
 
 $connexio=connectDB();
 
@@ -33,39 +33,9 @@ if($result !=NULL)
 else
 	$row=null;
 disconnectDB($connexio);
-//echo $sql;
-/*
-
-PER A ESCRIURE EL TEXT QUE TOQUI, EN LLOC DE FICAR LOREM IPSUM O ALTRES COSES FES SERVIR AIXÒ
-TITOL -> <?=$row['title']?>
-COORDENADES X -> <?=$row['coordX']?>
-COORDENADES Y -> <?=$row['coordY']?>
-DESCRIPCIO -> <?=$row['description']?>
-DATA -> <?=$row['dataIncident']?>
-NOM PERSONA -> <? echo $row['pname']." ".$row['psurname']; ?>
-NOM CONSELLER -> <? echo $row['tname']." ".$row['tsurname']; ?>
-*/
+echo $sql;
 ?>
 
-<!--EXEMPLE Q POTS BORRAR-->
-<!--<div class="row">
-	<div class="col s12">
-		<div class="card">
-			<div class="card-image">
-				<img class="activator"  style="width: 390px; height: 250px;margin-left: 18px;" src="http://maps.google.com/maps/api/staticmap?center=<?=$row['coordX']?>,<?=$row['coordY']?>&zoom=17&size=400x300&sensor=false&markers=color:green%7C<?=$row['coordX']?>,<?=$row['coordY']?>"/>
-				<span class="card-title"><?=$row['title']?></span>
-			</div>
-			<div class="card-content">
-				<p>I am a very simple card. I am good at containing small bits of information.
-				I am convenient because I require little markup to use effectively.</p>
-			</div>
-			<div class="card-action">
-				<a href="#">This is a link</a>
-			</div>
-		</div>
-	</div>
-</div>
--->
 <div class="light-green left-align white-text" style="margin-right:10%; height:100%; padding:20px;" >
 		<img class="activator"   style="width: 390px; height: 250px;margin-left: 18px; float:right;" src="http://maps.google.com/maps/api/staticmap?center=<?=$row['coordX']?>,<?=$row['coordY']?>&zoom=17&size=400x300&sensor=false&markers=color:green%7C<?=$row['coordX']?>,<?=$row['coordY']?>"/>
 	<p>
