@@ -2,7 +2,7 @@
 
 //app_insertUser.php
 
-include("fn.php");
+include("../fn.php");
 
 // array for JSON response
 $response = array();
@@ -36,18 +36,23 @@ if (isset($_GET['email'])) {
 
         // check if row inserted or not
         if ($res) {
-            disconnectDB($connexio);
+            disconnectDB($con);
             // successfully inserted into database
-
-            $query = "SELECT MAX(id) FROM access_data";
-            $query_exec = mysqli_query($con,$query);
-            $row = mysqli_fetch_assoc($query_exec);
-
-            $sql2 = "insert into user_data (name, surname, sex, age, id_access, email) values ('".$name."', '".$surname."', '.$sex.', '.$age.', '.$row['id'].', '".$email."')";
+/*
+            $query = "SELECT MAX(id) as id FROM access_data";
+            $query_exec = mysqli_query($con,$sql);
+            $idAccess=0;
+            while ($obj = mysqli_fetch_object($query_exec)) {
+              $idAccess= $obj->id;
+            }
+*/
+            $idAccess = mysqli_query($con, "SELECT id as id FROM access_data ORDER BY id DESC LIMIT 1");
+echo $idAccess;
+            $sql2 = "insert into user_data (name, surname, sex, age, id_access, email) values ('".$name."', '".$surname."', '.$sex.', '.$age.', '.$idAccess.', '".$email."')";
             $con=connectDB();
             $res2 = mysqli_query($con,$sql2);
             if ($res2) {
-              disconnectDB($connexio);
+              disconnectDB($con);
               $response["success"] = true;
               $response["message"] = "User successfully created.";
             }

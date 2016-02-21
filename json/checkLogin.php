@@ -1,8 +1,8 @@
 <?php
 
-//app_checkLogin.php
+//checkLogin.php?username=joanPlan&pass=grabAtowel42
 
-include("fn.php");
+include("../fn.php");
 
 // array for JSON response
 $response = array();
@@ -10,8 +10,8 @@ $response = array();
 
 if (isset($_GET['username']) && isset($_GET['pass'])) {
 
-  $email = $_GET['email'];
-  $password = md5($_GET['password']);
+  $email = $_GET['username'];
+  $password = md5($_GET['pass']);
 
   $con=connectDB();
 
