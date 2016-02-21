@@ -2,10 +2,6 @@
 include('fun_templates.php');
 include('fn.php');
 
-/*
-$_SESSION["userName"]=$row['email'];
-$_SESSION["idUsu"]=$row['id'];
-*/
 session_start();
 if(!isset($_SESSION['userName']))
 {
