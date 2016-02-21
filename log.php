@@ -19,20 +19,23 @@ elseif (isset($_POST['signIn'])) {
   {
     $rowcount=mysqli_num_rows($result);
     if($rowcount!=1){
-      echo $sql;
-      //header("Location: index.php?msg=1");
+      //echo $sql;
+      disconnectDB($connexio);
+      header("Location: index.php?msg=1");
     }
     else{
       $row = mysqli_fetch_assoc($result);
       $_SESSION["userName"]=$row['username'];
       $_SESSION["userId"]=$row['id'];
+      disconnectDB($connexio);
       header("Location: main.php");
     }
   }
 }
 else{
+  disconnectDB($connexio);
   header("Location: index.php?msg=1");
-  echo $sql;
+  //echo $sql;
 }
 
 ?>

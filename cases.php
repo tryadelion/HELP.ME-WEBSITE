@@ -36,6 +36,8 @@ while ($obj = mysqli_fetch_object($result)) {
 	caseFile($obj->title, $obj->dataIncident, $obj->name." ".$obj->surname, $obj->description, $obj->coordX, $obj->coordY);
 	$i++;
 }
+
+disconnectDB($connexio);
 ?>
 <?php
 contentEnd();

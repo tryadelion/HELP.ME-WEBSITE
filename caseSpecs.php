@@ -32,7 +32,7 @@ if($result !=NULL)
 	$row = mysqli_fetch_assoc($result);
 else
 	$row=null;
-
+disconnectDB($connexio);
 //echo $sql;
 /*
 

@@ -37,6 +37,7 @@ if($connexio->query($sql))
   {
     $rowcount=mysqli_num_rows($result);
     if($rowcount!=1){
+      disconnectDB($connexio);
       header("Location: index.php?msg=1");
     }
     else{
@@ -48,6 +49,7 @@ if($connexio->query($sql))
         echo "ok";
         header("Location: index.php");
       }else{
+        disconnectDB($connexio);
         echo "ko";
       }
     }
