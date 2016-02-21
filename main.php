@@ -26,7 +26,7 @@ leftNAV(0);
 
 contentStart();
 ?>
-<div id="map" class="col s12" style="height:550px;"></div>
+<div id="map" class="col s12" style="height:830px;"></div>
 
 <script type="text/javascript">
 	 var myOptions = {
@@ -83,5 +83,5 @@ if($result = mysqli_query($connexio, $sql))
 <?php
 contentEnd();
 
-//footer('style="position:fixed; bottom:0; width:100%;"');
-footer(' ');
+footer('style="position:fixed; bottom:0; width:100%;"');
+//footer(' ');
