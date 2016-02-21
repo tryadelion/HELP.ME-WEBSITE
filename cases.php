@@ -2,10 +2,6 @@
 include('fun_templates.php');
 include('fn.php');
 
-/*
-$_SESSION["userName"]=$row['email'];
-$_SESSION["idUsu"]=$row['id'];
-*/
 session_start();
 if(!isset($_SESSION['userName']))
 {
@@ -40,6 +36,8 @@ while ($obj = mysqli_fetch_object($result)) {
 	caseFile($obj->title, $obj->dataIncident, $obj->name." ".$obj->surname, $obj->description, $obj->coordX, $obj->coordY);
 	$i++;
 }
+
+disconnectDB($connexio);
 ?>
 <?php
 contentEnd();
