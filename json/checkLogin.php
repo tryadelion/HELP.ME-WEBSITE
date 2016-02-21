@@ -15,7 +15,7 @@ if (isset($_GET['username']) && isset($_GET['pass'])) {
 
   $con=connectDB();
 
-  $query = "SELECT * FROM access_data WHERE username = '".$email."' AND password = '".$password."'";
+  $query = "SELECT * FROM access_data WHERE username = '".$email."' AND pass = '".$password."'";
   $query_exec = mysqli_query($con,$query);
   $rows = mysqli_num_rows($query_exec);
   //echo $rows;
@@ -29,7 +29,7 @@ if (isset($_GET['username']) && isset($_GET['pass'])) {
     echo json_encode($response);
   }else{
     $response["success"] = false;
-    $response["message"] = $email." - ".$password;
+    $response["message"] = $query;
 
     // echoing JSON response
     echo json_encode($response);
