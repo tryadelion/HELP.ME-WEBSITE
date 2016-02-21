@@ -164,9 +164,9 @@ function blueCards($titol, $text, $list,$add){
 //titol, nom cognoms, data incidència , desc,
 function caseFile($titol, $data, $noms, $desc, $x, $y){
 ?>
-  <div class="card col s4"style="margin-right: 1%" >
+  <div class="card col s5"style="margin-right: 1%" >
     <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator"  style="width: 300px; height: 250px;margin-left: 18px;" src="http://maps.google.com/maps/api/staticmap?center=<?=$x?>,<?=$y?>&zoom=17&size=400x300&sensor=false&markers=color:green%7C<?=$x?>,<?=$y?>"/>
+      <img class="activator"  style="width: 390px; height: 250px;margin-left: 18px;" src="http://maps.google.com/maps/api/staticmap?center=<?=$x?>,<?=$y?>&zoom=17&size=400x300&sensor=false&markers=color:green%7C<?=$x?>,<?=$y?>"/>
     </div>
      <div class="card-content">
        <span class="card-title activator grey-text text-darken-4"><?=$titol?><br/><?=$data?><i class="material-icons right">more_vert</i></span>
